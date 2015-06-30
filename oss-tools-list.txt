@@ -46,4 +46,7 @@ it's git based if you checkout file without setting autocrlf proeprty to input i
 
  iTerm2 mac os terminal. I love the split horizontally and vertically feature.
 
- 
+
+Alfred 2
+___________
+spotlight alternative
