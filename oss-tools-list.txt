@@ -1,0 +1,49 @@
+
+Diff Tool
+___________
+
+Meld - meldmerge.org
+
+osx command line python script for meld ( Add ~/bin/py script to PATH)
+
+#!/usr/bin/python
+
+import sys
+import os
+import subprocess
+
+if len(sys.argv) > 1:
+  left = os.path.abspath(sys.argv[1]);
+else:
+  left = ""
+
+if len(sys.argv) > 2:
+  right = os.path.abspath(sys.argv[2]);
+else:
+  right = ""
+
+MELDPATH = "/Applications/Meld.app"
+arguments = " -n " + MELDPATH + " --args " + left + " " + right
+
+p = subprocess.call(['open', '-W', '-a',  MELDPATH, '--args', left, right])
+
+
+Pacakage Manager
+___________________
+
+Home Brew
+
+had trouble installing home brew on Yosemite
+
+Issue
+/usr/local/bin/brew: /bin/sh^M: bad interpreter: No such file or directory
+Fix
+convert /usr/local/bin/brew file to unixformat
+it's git based if you checkout file without setting autocrlf proeprty to input in mac. It will cause this issue.
+
+ Terminal
+ ______________
+
+ iTerm2 mac os terminal. I love the split horizontally and vertically feature.
+
+ 
